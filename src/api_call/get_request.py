@@ -67,10 +67,10 @@ Recheck and Evaluate Response
     def greeting_user(self, message):
         instruction_is = Make_Get_Request.user_instruction()
         #print(instruction_is)
-        self.conversation_history.append({
-            "role" : "system",
-            "content" : instruction_is
-        })
+        # self.conversation_history.append({
+        #     "role" : "system",
+        #     "content" : instruction_is
+        # })
         
         self.conversation_history.append({"role": "user" , "content": message})
         
@@ -81,4 +81,4 @@ Recheck and Evaluate Response
         result = response.choices[0].message.content
         print(' Answer **************** \n',response.choices[0].message.content)
         print('Completed *************')
-        return result
+        yield result
