@@ -4,3 +4,10 @@ requests
 python-dotenv
 pydantic
 mistralai
+psycopg2-binary
+python-dotenv
+passlib
+bcrypt 
+python-jose
+cryptography
+pydantic
